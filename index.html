@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piotr Sieńko - CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<main class="cv-container">
+    <section class="left-column">
+        <div class="photo">
+            <img src="avatar.jpg" id="profile-photo" alt="Zdjęcie profilowe">
+        </div>
+
+        <div class="intro-mobile">
+            <h1>Piotr Sieńko</h1>
+        </div>
+
+        <div class="skills-container">
+            <header>CONTACT</header>
+            <ul class="contact-list">
+                <!-- <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:XXXXXXXXX">xxx xxx xxx</a>
+                </li> -->
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:piotrsienko@protonmail.com">piotrsienko@protonmail.com</a>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Cracow,Poland" target="_blank">Cracow, Poland</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/piotr-sie%C5%84ko-3955803a3/" target="_blank">Linkedin</a>
+                </li>
+            </ul>
+
+            <header>HARD SKILLS</header>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>Matlab</li>
+                <li>R</li>
+                <li>Autodesk Fusion</li>
+                <li>Docker</li>
+            </ul>
+
+            <header>SOFT SKILLS</header>
+            <ul>
+                <li>Analytic thinking</li>
+                <li>Teamwork</li>
+                <li>Patience</li>
+                <li>Thoroughness</li>
+            </ul>
+
+            <header>LANGUAGES</header>
+            <ul>
+                <li>English - advanced</li>
+                <li>French - intermediate</li>
+            </ul>
+
+            <header>INTERESTS</header>
+            <ul>
+                <li>Machine learning</li>
+                <li>New technologies in biology and medicine</li>
+                <li>Computer science</li>
+                <li>Sport</li>
+                <li>Music</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="right-column">
+        
+        <div class="intro-desktop">
+            <h1>Piotr Sieńko</h1>
+        </div>
+
+        <div class="section-block">
+            <header>WORK EXPERIENCE</header>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <h3 class="entry-title">MedApp S.A.</h3>
+                    <span class="time-range">07.2025 – 08.2025</span>
+                </div> 
+                <p class="entry-subtitle">Intern</p>
+                
+                <div class="entry-content">
+                    <p>
+                        Developed an automatic segmentation method for epicardial adipose tissue. Created a dataset for an ultrasound probe position estimation algorithm.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <header>EDUCATION</header>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <h3 class="entry-title">AGH University of Krakow</h3>
+                    <span class="time-range">10.2022 – 22.2026</span>
+                </div>
+                
+                <div class="entry-subtitle">
+                    <h3>Biomedical Engineering</h3>
+                </div>
+
+                <div class="entry-content">
+                    <p>Degree: Bachelor of Science</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <header>COURSES & CERTIFICATIONS</header>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <h3 class="entry-title">Data analysis with R Programming</h3>
+                    <span class="time-range">04.2025</span>
+                </div>
+                
+                <div class="entry-subtitle">
+                    <h3>Provider - Google</h3>
+                </div>
+                
+                <div class="entry-content"></div>
+            </div>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <h3 class="entry-title">English B2 cerfitication</h3>
+                    <span class="time-range">06.2025</span>
+                </div>
+                
+                <div class="entry-subtitle">
+                    <h3>Provider - AGH University of Krakow</h3>
+                </div>
+                
+                <div class="entry-content"></div>
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>
+        I hereby agree for my personal data, included in my job application, to be processed in line with the needs of recruitment, in accordance with the Law on Personal Data Protection of 29 August 1997 (Law Gazette from 2002, No.101, heading 926, as amended)
+    </p>
+</footer>
+<script src="photo.js"></script>
+<script>
+  document.getElementById('profile-photo').src = photoBase64;
+</script>
+</body>
+
+</html>
+

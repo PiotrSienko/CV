@@ -1,0 +1,246 @@
+/* --- RESET & BASE --- */
+html {
+    font-size: 10px;
+}
+
+@media (min-width: 1024px) {
+    html { font-size: 15px; }
+}
+@media (min-width: 1440px) {
+    html { font-size: 16px; }
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e2e2e2);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+ul {
+    list-style: disc inside;
+    padding-left: 0.6rem;
+    font-size: 0.9rem;
+}
+
+/* --- LAYOUT --- */
+.cv-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+/* --- LEFT COLUMN --- */
+.left-column {
+    background-color: #404040;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column header {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    padding-bottom: 0.5rem;
+    color: #fff;
+    margin-top: 1.5rem;
+}
+
+.left-column header:first-of-type {
+    margin-top: 0;
+}
+
+/* Photo */
+.photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+/* Contact List */
+.contact-list {
+    list-style: none;
+    padding: 0 0 1.2rem 0;
+    margin: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-list i {
+    font-size: 0.9rem;
+    color: #fff;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contact-list a:hover {
+    background-color: #f0f0f0;
+    color: #0077b5;
+    transform: translateY(-2px);
+}
+
+/* --- RIGHT COLUMN --- */
+.right-column {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.right-column header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    color: #000;
+    text-transform: uppercase;
+}
+
+/* Intro Names */
+.intro-desktop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100px;
+    margin-bottom: 1rem;
+}
+
+.intro-desktop h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #444;
+}
+
+.intro-mobile {
+    display: none;
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/* --- UNIFIED ENTRY STYLES (Jobs, Education, Courses) --- */
+.section-block {
+    margin-bottom: 10px;
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.entry-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #000;
+}
+
+.time-range {
+    font-size: 1rem;
+    color: #777;
+    white-space: nowrap;
+}
+
+.entry-subtitle,
+.entry-subtitle h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #5e6b7e;
+    margin: 0;
+}
+
+.entry-content {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #f0f0f0; /* Spójna linia dla wszystkich sekcji */
+}
+
+/* Usunięcie linii dla ostatniego elementu w sekcji (opcjonalne) */
+.section-block .entry:last-child .entry-content {
+    border-bottom: none;
+}
+
+/* --- FOOTER --- */
+footer {
+    max-width: 1200px;
+    background: white;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: justify;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 625px) {
+    .cv-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-desktop {
+        display: none;
+    }
+
+    .intro-mobile {
+        display: block;
+    }
+
+    .photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .left-column, .right-column {
+        padding: 1.5rem;
+    }
+}
